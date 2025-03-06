@@ -1,0 +1,67 @@
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%
+}
+
+.titulo {
+    background: linear-gradient(to right, #dd7285, #0e5dd6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.imagen-flotante-derecha{
+    transform: rotateY(3.142rad);
+    float: right;
+    margin-left: 20px;
+}
+
+img{
+    border-radius: 20px;
+    width: 35%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor{
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para el div */
+  border: 12px solid transparent; /* Establecemos un borde de 20px transparente */
+  border-image: linear-gradient(45deg, #fe6091, #17f7f1) 1;
+}
+
+.imagen-flotante{
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #e5e6fa;
+    text-align: center;
+  }
+
+  .final{
+    text-align:left;
+    margin-top: 10%;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+
+p{
+  margin-left: 20px;
+  margin: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+  
+  
+

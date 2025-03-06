@@ -1,0 +1,61 @@
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%
+}
+
+.titulo {
+    background: linear-gradient(to right, #dd7285, #0e5dd6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+.imagen-flotante-derecha{
+    transform: rotateY(3.142rad);
+    float: right;
+}
+
+img{
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor{
+        border: 20px;
+        border: 20px solid blue;
+        background-color: tomato;
+}
+
+.imagen-flotante{
+    float: left;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e5e6fa;
+    text-align: center;
+  }
+
+  .final{
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+
+  p{
+    text-align: center;
+  }
+  
+  
+
