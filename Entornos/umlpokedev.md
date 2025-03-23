@@ -6,7 +6,9 @@ classDiagram
         - string name
         - int num_gyms
         - Gym[] gyms
-        - Pokemon[] pokemons
+        - Trainer[] trainers
+        + agregarGym(Gym gym)
+        + agregarEntrenador(Trainer trainer)
     }
 
     class Gym {
@@ -14,6 +16,7 @@ classDiagram
         - string name
         - int num_trainers
         - Medal medal
+        + desafiar(Trainer trainer)
     }
 
     class Pokemon {
@@ -25,7 +28,8 @@ classDiagram
         - Nature nature
         - Type type
         - Type subtype
-        - Evolution evolution
+        + atacar(Pokemon opponent)
+        + subirDeNivel()
     }
 
     class Trainer {
@@ -36,6 +40,7 @@ classDiagram
         - Medal[] medals
         - Item[] items
         - Pokemon[] pokemons
+        + desafiarGym(Gym gym)
     }
 
     class Professor {
@@ -67,6 +72,7 @@ classDiagram
     }
 
     Region "1" -- "*" Gym : contiene
+    Region "1" -- "*" Trainer : tiene
     Gym "1" -- "*" Trainer : desafía
     Gym "1" -- "1" Medal : otorga
     Trainer "*" -- "*" Pokemon : entrena
@@ -74,11 +80,7 @@ classDiagram
     Pokemon "1" -- "1" Type : tiene
     Pokemon "1" -- "1" Type : tiene (subtipo)
     Pokemon "1" -- "1" Nature : tiene
-    Pokemon "1" -- "1" Evolution : evoluciona
     Professor "1" -- "*" Trainer : entrega
     Professor "1" -- "*" Pokemon : entrega
 
 ```
-apps-fileview.texmex_20250313.01_p0
-P2.txt
-Mostrando P2.txt.
