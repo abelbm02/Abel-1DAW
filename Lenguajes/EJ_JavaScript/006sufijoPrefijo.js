@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // Asignar valores a las variables a y b
 let a = 1, b = 1;
