@@ -1,7 +1,7 @@
 "use strict";
 
 let message;
-let login = 'Alumno';
+let login = '';
 
 //Reescribir el siguiente if-else con el operador ternario
 message = (login == 'Alumno') ? message = 'Hola estudiante, tiene 10 tareas pendientes' : 
