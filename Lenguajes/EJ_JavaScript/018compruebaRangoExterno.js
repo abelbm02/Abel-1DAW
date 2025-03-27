@@ -1,10 +1,12 @@
 "use strict";
 
 let age = prompt("Introduce tu edad: ");
+age = Number(age);
 
-
-// Con el => podemos hacer que se nincluyan los extermos del rango
-if (!edad >= 18 && edad <= 99) {
-    alert("Estas haciendote mayor")
+// Con ! se niega la condición, es lo contrario a la condición
+if (!(age >= 18 && age <= 99)) {
+    alert("Eres un chaval");
 }
-else { alert("Eres un chaval") }12
+else { 
+    alert("Eres un carcamal"); 
+}
