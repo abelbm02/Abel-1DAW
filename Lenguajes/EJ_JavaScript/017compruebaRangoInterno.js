@@ -6,4 +6,6 @@ let age = prompt("Introduce tu edad: ");
 if (age >= 18 && age <= 99) {
     alert("Estas haciendote mayor");
 }
-else { alert("Eres un chaval"); }
+else { 
+    alert("Eres un chaval"); 
+}
