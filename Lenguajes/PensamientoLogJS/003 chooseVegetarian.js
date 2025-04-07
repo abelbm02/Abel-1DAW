@@ -1,31 +1,35 @@
 "use strict";
 
 // Elige un menú según la comida y si es vegetariano o no
-let comida = prompt ("Quiere cenar, almorzar o desayunar?");
-let veg = prompt ("Es vegetariano? (si/no)");
+
+let comida;
+let veg;
+
+comida = prompt ("Quiere cenar, almorzar o desayunar?" );
+veg = prompt ("Es vegetariano? (si/no)" );
 
 // Comida cena, almuerzo o desayuno
 // Vegetariano o no
-if (comida == "cena" && veg == "si") {
-    alert ("Ensalada de lechuga y cebolla");
+if (comida == "cenar" && veg == "si") {
+    console.log ("Ensalada de lechuga y cebolla");
 }
-else if (comida == "cena" && veg == "no") {
-    alert("Carne asada con papas fritas");
+else if (comida == "cenar" && veg == "no") {
+    console.log("Carne asada con papas fritas");
 }
 
 
-if (comida == "almuerzo" && veg == "si") {
-    alert ("Lentejas con arroz");
+if (comida == "almorzar" && veg == "si") {
+    console.log ("Lentejas con arroz");
 }   
-else if (comida == "almuerzo" && veg == "no") {
-    alert ("Pollo con verduras al vapor")
+else if (comida == "almorzar" && veg == "no") {
+    console.log ("Pollo con champiñones")
 }
 
 
 
-if (comida == "desayuno" && veg == "si") {
-    alert ("Tostadas con aguacate");
+if (comida == "desayunar" && veg == "si") {
+    console.log ("Tostadas con aguacate");
 }
-else if (comida == "desayuno" && veg == "no") {
-    alert ("Tostada de jamón y queso")
+else if (comida == "desayunar" && veg == "no") {
+    console.log ("Tostada de jamón y queso")
 }
