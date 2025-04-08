@@ -19,3 +19,6 @@ else if (ingredientes == 2){
     alert("Una receta con 2 ingredientes puede ser, un bocadillo de jamón y queso.");
     alert("Una receta con 2 ingredientes puede ser, un batido de plátano y leche.");
 }
+else{
+    alert("No tengo recetas con esa cantidad de ingredientes, pero puedes inventar una tú mismo.");
+}
