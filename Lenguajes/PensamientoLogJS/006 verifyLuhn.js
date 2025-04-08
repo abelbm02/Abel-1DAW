@@ -19,6 +19,7 @@ for (let i = digitos.length - 1; i >= 0; i--) {
         }
     }
     
+    // Sumar el dígito (modificado o no) a la suma total
     suma += digito;
 
     if (i === 0 && suma % 10 === 0) {
