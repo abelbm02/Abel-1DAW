@@ -47,3 +47,23 @@ for (let i = 0; i < itCompanies.length; i++){
 
 //Imprimir el array como una oracion, todo seguido
 let frase = `${itCompanies.slice(0, -1).join(', ')} y ${itCompanies.slice(-1)} son grandes empresas de TI.`;
+
+//Comprobar que en el array hay una determinada empresa, sie existe la devuelve sino, devuelve un mensaje
+let buscarEmpresa = "Facebook";
+
+if (itCompanies.includes(buscarEmpresa)){
+    console.log(`${buscarEmpresa} existe en el array`);
+}
+else{
+    console.log(`${buscarEmpresa} no existe en el array`);
+}
+
+//Filtrar empresas que contengan la letra 'o' sin metodo filter()
+let empresasConO = [];
+for (let i = 0; i < itCompanies.length; i++){
+    if (itCompanies[i].includes("o")){
+        empresasConO.push(itCompanies[i]);
+    }
+}
+console.log(empresasConO);
+
