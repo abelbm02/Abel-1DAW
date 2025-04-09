@@ -59,11 +59,45 @@ else{
 }
 
 //Filtrar empresas que contengan la letra 'o' sin metodo filter()
-let empresasConO = [];
+let empresasO = [];
 for (let i = 0; i < itCompanies.length; i++){
     if (itCompanies[i].includes("o")){
-        empresasConO.push(itCompanies[i]);
+        empresasO.push(itCompanies[i]);
     }
 }
-console.log(empresasConO);
+console.log(empresas0);
 
+//Ordenr el array con sort()
+let itCompaniesSorted = itCompanies.slice().sort();
+console.log(itCompaniesSorted);
+
+//Invertir el array con reverse()
+let itCompaniesReversed = itCompanies.slice().reverse();
+console.log(itCompaniesReversed);
+
+//Cortar las tres primeras empresas del array
+let itCompaniesCortadas = itCompanies.slice(3);
+console.log(itCompaniesCortadas);
+
+//Cortar las tres ultimas empresas del array
+let itCompaniesCortadasUltimas = itCompanies.slice(0, -3);
+
+//Cortar la empresa o empresas intermedias del array
+let empresasIntermedias = itCompanies.slice(1, -1);
+
+//Eliminar la primera empresa del array
+let eliminarPrimeraEmpresa = itCompanies.shift();
+console.log(itCompanies);
+
+//Eliminar la empresa o empresas intermedias del array
+let eliminarIntermedias = itCompanies.splice(1, 3);
+console.log(itCompanies);
+
+//Eliminar la última empresa del array
+let eliminarUltimaEmpresa = itCompanies.pop();
+console.log(itCompanies);
+
+
+//Eliminar todas las empresas del array
+let eliminarTodas = itCompanies.splice(0, itCompanies.length);
+console.log(itCompanies);
