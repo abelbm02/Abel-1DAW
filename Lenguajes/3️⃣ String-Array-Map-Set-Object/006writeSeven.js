@@ -8,9 +8,8 @@ function numalea () {
         let numeroaleatorio = Math.floor(Math.random() * 10);
         if (!num.includes(numeroaleatorio)) {
         num.push(numeroaleatorio);}
-
-        return num;
     }
 }
+return num;
 
 console.log(numalea());
