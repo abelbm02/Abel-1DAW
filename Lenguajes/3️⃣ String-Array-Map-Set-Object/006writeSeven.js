@@ -9,7 +9,7 @@ function numalea () {
         if (!num.includes(numeroaleatorio)) {
         num.push(numeroaleatorio);}
     }
+    return num;
 }
-return num;
 
 console.log(numalea());
