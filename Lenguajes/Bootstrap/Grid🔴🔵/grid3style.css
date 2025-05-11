@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.row {
+    margin: 0;
+    width: 100%;
+}
+.col-12 {
+    padding: 0;
+}
+.box {
+    padding: 10px;
+    text-align: center;
+}
+.small-box {
+    padding-left: 10px;
+    text-align: left;
+}
+    .bg-1 { background-color: #007bff; }
+    .bg-2 { background-color: #17e9f1; }
+    .bg-3 { background-color: #dc3545; }
+    .bg-4 { background-color: #1d7044; }
+    .bg-5 { background-color: #ffc107;}
+    .bg-6 { background-color: #6c757d; }
+    .bg-7 { background-color: #212529; 
+        color: white;
+    }
+    .bg-8 { background-color: #f8f9fa; }
+    .bg-9 { background-color: #6610f2; }
+    .bg-10 { background-color: #0dcaf0;} 
+    .bg-11 { background-color: #f8c6d0;}
+    .bg-12 { background-color: #d8a3f2;}
+    .bg-13 { background-color: #6ea8fe;}
+    .bg-14 { background-color: #17e9f1; }
