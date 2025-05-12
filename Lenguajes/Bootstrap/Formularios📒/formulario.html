@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="formulario.html"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container mt-5">
+    <h2>Registro de Usuario</h2>
+        <form class="needs-validation" novalidate>
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <label class="form-label">Nombre completo *</label>
+                    <input type="text" class="form-control" id="nombre" required minlength="3" />
+                    <div class="invalid-feedback">Por favor ingresa al menos 3 caracteres.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" required />
+                    <div class="invalid-feedback">Por favor ingresa una direccion valida</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="pass" class="form-label">Contraseña *</label>
+                    <input type="password" class="form-control" id="pass" required minlength="8" />
+                    <div class="invalid-feedback">Por favor ingresa al menos 8 caracteres.</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="pass2" class="form-label">Confirmar contraseña *</label>
+                    <input type="password" class="form-control" id="pass2" required />
+                    <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+                </div>
+                <div class="col-md-4">
+                    <label  for="edad" class="form-label">Edad *</label>
+                    <input type="number" class="form-control" id="edad" required min="18" max="120" />
+                    <div class="invalid-feedback">Debes tener entre 18 y 120 años.</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="fechaNacimiento" class="form-label">Fecha de nacimiento *</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" required />
+                    <div class="invalid-feedback">Selecciona tu fecha de nacimiento.</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="color" class="form-label">Color favorito</label>
+                    <input type="color" class="form-control form-control-color" id="colorFavorito" />
+                </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" />
+                </div>
+                <div class="col-md-6">
+                    <label for="sitio" class="form-label">Sitio web</label>
+                    <input type="url" class="form-control" id="sitioWeb" />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label d-block">Género *</label>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" value="Hombre" required />
+                    <label class="form-check-label">Hombre</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" value="Mujer" />
+                    <label class="form-check-label">Mujer</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" value="Otro" />
+                    <label class="form-check-label">Otro</label>
+                </div>
+                
+                <div class="invalid-feedback d-block">Selecciona una opción.</div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label d-block">Hobbies *</label>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input hobby" type="checkbox" value="Lectura" />
+                    <label class="form-check-label">Lectura</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input hobby" type="checkbox" value="Deporte" />
+                    <label class="form-check-label">Deporte</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input hobby" type="checkbox" value="Música" />
+                    <label class="form-check-label">Música</label>
+                </div>
+                
+                <div class="invalid-feedback d-block" id="hobbiesError">Marca al menos un hobby.</div>
+                </div>
+                
+                <div class="col-12">
+                    <label class="form-label">Biografía</label>
+                    <textarea class="form-control" maxlength="500" rows="3"></textarea>
+                </div>
+                
+                <div class="col-md-6">
+                    <label class="form-label">Sueldo aspiracional (€) *</label>
+                    <input type="range" class="form-range" min="1000" max="10000" step="500" id="sueldo" />
+                </div>
+                
+                <div class="col-md-6">
+                    <label class="form-label">CV (PDF) *</label>
+                    <input type="file" class="form-control" id="cv" accept=".pdf" required />
+                    <div class="invalid-feedback">Sube tu CV en formato PDF.</div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label class="form-label">País *</label>
+                    <select class="form-select" id="pais" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="ES">España</option>
+                    <option value="MX">México</option>
+                    <option value="AR">Argentina</option>
+                    </select>
+                    <div class="invalid-feedback">Elige un país.</div>
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
